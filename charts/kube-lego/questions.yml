@@ -1,0 +1,20 @@
+questions:
+  database_name:
+    default: alfresco
+    description: "Name of the Alfresco database"
+    label: "Database name"
+    required: true
+    type: string
+  database_user:
+    default: alfresco
+    description: "Login for the Alfresco database"
+    label: "Database login"
+    required: true
+    type: string
+  database_password:
+    default: alfresco
+    description: "Password for the Alfresco database"
+    label: "Database password"
+    required: true
+    type: string
+    variable: database_password
