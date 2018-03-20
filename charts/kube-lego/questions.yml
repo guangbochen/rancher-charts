@@ -1,20 +1,27 @@
 questions:
-  database_name:
-    default: alfresco
-    description: "Name of the Alfresco database"
-    label: "Database name"
-    required: true
+- config.LEGO_EMAIL:
+    description: "email address to use for registration with Let's Encrypt"
     type: string
-  database_user:
-    default: alfresco
-    description: "Login for the Alfresco database"
-    label: "Database login"
-    required: true
+- config.LEGO_URL:
+    default: https://acme-staging.api.letsencrypt.org/directory
+    description: "Let's Encrypt API endpoint"
     type: string
-  database_password:
-    default: alfresco
-    description: "Password for the Alfresco database"
-    label: "Database password"
-    required: true
+- config.LEGO_PORT:
+    default: "8080"
+    description: "kube-lego port"
     type: string
-    variable: database_password
+- image.repository:
+    default: "jetstack/kube-lego"
+    description: "kube-lego container image repository"
+    type: string
+- image.tag:
+    default: "0.1.3"
+    description: "kube-lego container image tag"
+    type: string
+- image.pullPolicy:
+    default: "IfNotPresent"
+    description: "kube-lego container image pull policy"
+    type: string
+- nodeSelector:
+    description: "node labels for pod assignment"
+    type: string
