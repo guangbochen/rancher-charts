@@ -19,12 +19,15 @@ questions:
   description: "kube-lego container image tag"
   type: string
 - variable: image.pullPolicy
+  label: pullPolicy
   default: "IfNotPresent"
   description: "kube-lego container image pull policy"
   type: string
 - variable: nodeSelector
   description: "node labels for pod assignment"
   type: string
+  label: nodeSeletor
+  required: true
 - variable: serviceType
   label: NodePort
   default: "NodePort"
