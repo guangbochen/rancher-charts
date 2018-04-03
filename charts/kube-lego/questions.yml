@@ -25,3 +25,12 @@ questions:
 - variable: nodeSelector
   description: "node labels for pod assignment"
   type: string
+- variable: serviceType
+  label: NodePort
+  default: "NodePort"
+  description: "Kubernetes Service type(options are ClusterIP, NodePort and LoadBalancer)"
+  type: "enum"
+  options: 
+    - "ClusterIP"
+    - "NodePort"
+    - "LoadBalancer"
