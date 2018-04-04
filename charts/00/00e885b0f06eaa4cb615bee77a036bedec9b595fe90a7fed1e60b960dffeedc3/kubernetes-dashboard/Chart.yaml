@@ -1,5 +1,5 @@
 appVersion: 1.8.3
-description: General-purpose web UI for Kubernetes clusters
+description: General-purpose web UI for Kubernetes clusters+hello
 home: https://github.com/kubernetes/dashboard
 icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
 keywords:
