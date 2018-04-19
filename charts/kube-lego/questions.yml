@@ -1,3 +1,6 @@
+categories:
+- test1
+- test2
 questions:
 - variable: config.LEGO_EMAIL
   description: "email address to use for registration with Let's Encrypt"
