@@ -1,8 +1,7 @@
 categories:
 - test1
 - test2
-minimum_rancher_version: test1
-maximum_rancher_version: test2
+rancher_version: test1
 questions:
 - variable: config.LEGO_EMAIL
   description: "email address to use for registration with Let's Encrypt"
