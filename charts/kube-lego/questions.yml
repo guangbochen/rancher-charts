@@ -1,6 +1,7 @@
 categories:
 - test1
 - test2
+namespace: test
 rancher_version: test1
 questions:
 - variable: config.LEGO_EMAIL
