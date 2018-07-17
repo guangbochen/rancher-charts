@@ -3,6 +3,8 @@ categories:
 - test2
 namespace: test
 rancher_version: test1
+labels:
+  io.rancher.certica: true
 questions:
 - variable: config.LEGO_EMAIL
   description: "email address to use for registration with Let's Encrypt"
